@@ -1,7 +1,6 @@
 import streamlit as st
 from PIL import Image
-#python -m  streamlit run C:\Users\shugu\Desktop\
-陈冠霖的网络根据地\chenguanlin_home.py
+#python -m  streamlit run C:\Users\shugu\Desktop\陈冠霖的网络根据地\chenguanlin_home.py
 
 
 page=st.sidebar.radio('我的首页',['我的兴趣推荐','我的图片处理工具','我的智能词典','我的留言区'])
