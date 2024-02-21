@@ -36,6 +36,17 @@ def page3():
 def page4():
     '''留言区'''
     pass
+def img_change(img,rc,gc,bc):
+    '''图片处理'''
+    width,height=img.size
+    img_array=img.load()
+    for x in range(width):
+        for y in range(height):
+            r=img_array[x,y][rc]
+            g=img_array[x,y][gc]
+            b=img_array[x,y][bc]
+            img_array[x,y]=(r,g,b)
+    return img
 if page=='我的兴趣推荐':
     page1()
     st.image("bc0594dc-ca0f-4c44-ac2d-df93d9eab3e6.jpg")
@@ -48,15 +59,5 @@ elif page=='我的智慧词典':
 elif page=='我的留言区':
     page4()
     st.write()
-def img_change(img,rc,gc,bc):
-    '''图片处理'''
-    width,height=img.size
-    img_array=img.load()
-    for x in range(width):
-        for y in range(height):
-            r=img_array[x,y][rc]
-            g=img_array[x,y][gc]
-            b=img_array[x,y][bc]
-            img_array[x,y]=(r,g,b)
-    return img
+
     
