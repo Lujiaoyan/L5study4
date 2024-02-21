@@ -21,6 +21,15 @@ def page2():
         img=Image.open(uploaded_file)
         st.image(img)
         st.image(img_change(img,0,2,1))
+        tab1,tab2,tab3,tab4=st.tabs(["原图","改色1","改色2","改色3"])
+        with tab1
+            st.image(img)
+        with tab2
+            st.image(img_change(img,0,2,1)))
+        with tab3
+            st.image(img_change(img,1,2,0))
+        with tab4
+            st.image(img_change(img,1,0,2))  
         
 def page3():
     '''智能词典'''
@@ -51,12 +60,4 @@ def img_change(img,rc,gc,bc):
             b=img_array[x,y][bc]
             img_array[x,y]=(r,g,b)
     return img
-tab1,tab2,tab3,tab4=st.tabs(["原图","改色1","改色2","改色3"])
-with tab1
-    st.image(img)
-with tab2
-    st.image(img_change(img,0,2,1)))
-with tab3
-    st.image(img_change(img,1,2,0))
-with tab4
-    st.image(img_change(img,1,0,2))      
+    
