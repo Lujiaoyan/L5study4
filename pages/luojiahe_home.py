@@ -26,9 +26,9 @@ def page1():
     st.write('-----------------------------------------------')
     
     st.write(':red[歌曲推荐]')
-    with open('音乐/好运来.mp3', 'rb')as f:
+    with open('好运来.mp3', 'rb')as f:
         haoyunlai = f.read()
-    with open('音乐/只因你太美.mp3', 'rb')as f:
+    with open('只因你太美.mp3', 'rb')as f:
         zhiyinnitaimei = f.read()
     st.write('好运来')
     st.audio(haoyunlai, format='audio/mp3', start_time=0)
