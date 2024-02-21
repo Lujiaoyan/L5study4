@@ -4,7 +4,7 @@ import streamlit as st
 from PIL import Image
 
 page = st.sidebar.radio('我的首页',['我的兴趣推荐','我的图片处理工具','我的智慧词典','我的留言区'])
-with open('yrx-十七岁请回答.kgm','rb')as f:
+with open('yrx-十七岁请回答.mp3','rb')as f:
     mymp3 = f.read()
 st.audio(mymp3,format = 'audio/kgm',start_time = 1)
 def page1():
