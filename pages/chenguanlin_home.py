@@ -18,7 +18,7 @@ def page4():
     pass
 if page=='我的兴趣推荐':
     page1()
-    st.image(bc0594dc-ca0f-4c44-ac2d-df93d9eab3e6)
+    st.image('bc0594dc-ca0f-4c44-ac2d-df93d9eab3e6.jpg')
     st.write("九品芝麻官")
 elif page=='我的图片处理工具':
     page2()
